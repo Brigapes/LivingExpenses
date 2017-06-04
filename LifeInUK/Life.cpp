@@ -52,6 +52,6 @@ Life::Life() {
 
 double Life::FinalLeftover() {
 
-	return (GetYearWage() - (GetYearWage() / 100 - GetTaxRate())) - Rent - Expenses;
+	return ((GetYearWage() - (GetYearWage() / 100 - GetTaxRate())) - Rent*12 - Expenses*12);
 
 }
